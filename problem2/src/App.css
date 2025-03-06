@@ -1,0 +1,22 @@
+/* Global Styles with Animated Gradient */
+body {
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #4a90e2, #50e3c2);
+  animation: gradientBG 15s ease infinite;
+  font-family: Arial, Helvetica, sans-serif;  
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100px;
+  min-height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

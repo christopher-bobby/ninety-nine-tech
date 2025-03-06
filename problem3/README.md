@@ -1,0 +1,11 @@
+- Missing imports like useMemo.
+- The logic for filtering balances with amount <= 0 is misplaced. It should filter out balances with amount <= 0.
+- Remove the usage of children as it's not used.
+- Key as index is changed to currency-amount as it's not recommended to use index.
+- Removal of any into proper types as it improves TypeScript quality.
+- Removal of prices as useMemo dependency as it's not used.
+- lhsPriority is not used; it could cause a reference error.
+- formattedBalance is computed but never used; it should be removed.
+- The blockchain property is not defined in the WalletBalance interface, but it is used in the getPriority function. This will cause a TypeScript error.
+- The FormattedWalletBalance interface is redundant because it duplicates the WalletBalance interface. 
+- The sort function does not return a value for the case when leftPriority and rightPriority are equal.

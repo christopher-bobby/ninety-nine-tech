@@ -1,0 +1,1 @@
+import "@testing-library/jest-dom/vitest"; // Use Vitest-compatible version
